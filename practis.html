@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title> LOGIN</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="font\css\fontawesome.min.css">
+<!--<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">-->
+<link rel="stylesheet" type="text/css" href="iconfont.css">
+
+</head>
+<body  onload="check_login()">
+
+<div class="navigation">
+	<input type="checkbox" class="navigation-checkbox" name="" id="navi-toggle">
+	<label for="navi-toggle" class="navigation-button"><span class="navigation-icon  navigation-icon-1"></span></label>
+
+
+<div class="navigation-background"> </div>
+<nav class="navigation-nav">
+<ul class="navigation-list">
+
+	<li class="navigation-item overall-display" id="booknow-btn"><a href="#section-tours" class="navigation-link" onclick="navigation_gone()">BOOK NOW </a></li>
+	<li class="navigation-item"><a href="#features" class="navigation-link" onclick="navigation_gone()">FEATURES</a></li>
+	<li class="navigation-item"><a href="#story" class="navigation-link" onclick="navigation_gone()">STORIES</a></li>
+	<li class="navigation-item"><a href="#about_facility" class="navigation-link" onclick="navigation_gone()">ABOUT FACILITY</a></li>
+</ul>
+
+
+
+</nav>
+
+
+</div>
+
+
+
+<!--                       creating the profile                -->
+<div class="profile" id="user-profile">
+<div class="profile-content">
+<div class="profile-content-header">
+	<a href="#header" class="profile-content-header-close" id="profile-close">&times;</a>
+<h5 class="profile-content-header-heading-name" id="profile-name">SULEMAN SHOUKAT</h5>
+<h5 class="profile-content-header-heading-email" id="profile-email-head">SALMANALX7@GMAIL.COM</h5>
+<div class="profile-content-header-btns">
+	<a  class="profile-content-header-btns-info-account" id="profile-btn-account">ACCOUNT</a>
+		<a class="profile-content-header-btns-info-orders" id="profile-btn-orders">ORDERS</a>
+		<span class="profile-content-header-btns-order-noti  profile-content-header-btns-noti overall-display" id="order-noti">1</span>
+			<a class="profile-content-header-btns-info-notification" id="profile-btn-notification">NOTIFICATIONS</a>
+			<span class="profile-content-header-btns-notification-noti  profile-content-header-btns-noti overall-display" id="notification-noti">1</span>
+</div>
+</div>
+<div class="profile-content-main">
+
+	<!--                          USER ACCOUNT INFORMATION AND EDIT INFO FORM -->
+<div class="profile-content-main-account" id="user-account">
+	<div class="profile-content-main-account-hdiv" >
+<h1 class="profile-content-main-account-heading">YOUR PERSONAL INFORMATION</h1>
+	</div>
+	<div class="profile-content-main-account-condiv">
+<label for="" class="profile-content-main-account-condiv-firstname-label" id="profile-firstname-label">FIRST NAME:</label>
+<h5 class="profile-content-main-account-condiv-firstname" id="profile-firstname">SULEMAN</h5>
+<a  href="#edit-form" class="edit-content edit-firstname" title="edit firstname" id="edit-firstname" onclick="edit_firstname()">&#9998;</a>
+<label for="" class="profile-content-main-account-condiv-surname-label" id="profile-surname-label">SURNAME:</label>
+<h5 class="profile-content-main-account-condiv-surname" id="profile-surname">SHOUKAT</h5>
+<a  href="#edit-form" class="edit-content edit-surname" title="edit surname" id="edit-surname" onclick="edit_surname()">&#9998;</a>
+<label for="" class="profile-content-main-account-condiv-email-label" id="profile-email-label">EMAIL:</label>
+<h5 class="profile-content-main-account-condiv-email" id="profile-email">SULEMANALX7@GMAIL.COM</h5>
+<a  href="#edit-form" class="edit-content edit-email" title="edit email" id="edit-email" onclick="edit_email()">&#9998;</a>
+<label for="" class="profile-content-main-account-condiv-password-label" id="profile-password-label">PASSWORD:</label>
+<h5 class="profile-content-main-account-condiv-password" id="profile-password">SALMAN.3311</h5>
+<a  href="#edit-form" class="edit-content edit-password" title="edit passowrd" id="edit-password" onclick="edit_password()">&#9998;</a>
+<label for="" class="profile-content-main-account-condiv-dateofbirth-label" id="profile-dob-label">DOB:</label>
+<h5 class="profile-content-main-account-condiv-dateofbirth" id="profile-dateofbirth">19/04/2016</h5>
+<a  href="#edit-form" class="edit-content edit-dob" title="edit DOB" id="edit-dob" onclick="edit_dob()">&#9998;</a>
+<a href="#" class="btn btn-green profile-content-main-account-condiv-btn" id="profile-deactivs">DEACTIVE ACCOUNT</a>
+	</div>
+</div>
+
+	<!--                          USER ACCOUNT INFORMATION AND EDIT INFO FORM -->
+
+</div>
+</div>
+</div>
+
+<!---- form of user information edit   it is a part of user profile   -->
+
+<div class="edit-account-info" id="edit-form">
+	<div class="edit-account-info-form-background">
+			<a href="#user-profile" class="newinfo-form-close" id="edit-form-close">&times;</a>
+		<h2 class="new-info-heading">INPUT THE NEW INFORMATION OF REQUIRED FIELD</h2>
+<label for="" class="old-content" id="old-userdata">OLD CONTENT:</label>
+<h5 class="old-content-value" id="old-userdata-value">OLD USER VALUE</h5>
+<form id="edit-info-form">
+	<label for="" class="new-content" id="new-userdata">INPUT NEW DATA:</label>
+	<input type="text" name="new_info" value="" class="new-data-form-input" id="new-data-input" required>
+	<button  name="button" class="btn btn-green edit-info-btn" id="edit-form-btn">SUBMIT</button>
+
+</form>
+
+	</div>
+
+</div>
+
+
+
+
+<!--      wdit infor form end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--                                    user profile form ends here     -->
+
+
+
+<div class="order" id="order-confirm">
+
+<div class="order-content">
+<div class="company-info">
+
+
+<h4 class="heading-secondary  order-content-heading">PLEASE FILL THE REQUIRED FORM TO PLACE ORDER</h4>
+<h5 class="overall-display" id="order-id"> </h5>
+<label for="compnyname" class="order-content-name-label  heading-secondary" >COMPANY NAME:</label>
+<h5 class="order-content-name" id="order-name"></h5>
+<label for="ownername" class="order-content-owner-name-label  heading-secondary" >OWNER NAME:</label>
+<h5 class="order-content-owner-name" id="order-ownername">NAME OF OWNER HERE</h5>
+<label for="email" class="order-content-email-label  heading-secondary" >EMAIL:</label>
+<h5 class="order-content-email" id="order-email"></h5>
+<label for="COMPANYTYPE" class="order-content-type-label  heading-secondary" >COMPANY TYPE:</label>
+<h5 class="order-content-type" id="order-type"></h5>
+<label for="rating" class="order-content-rating-label  heading-secondary" >RATING:</label>
+<h5 class="order-content-rating" id="order-rating"> </h5>
+<label for="price" class="order-content-price-label  heading-secondary" >PRICE:</label>
+<h5 class="order-content-price" id="order-price"> </h5>
+<h4 class="order-content-client-head">CLIENT REQUIRED TO FILL THIS PORTION</h4>
+
+
+</div>
+
+<div class="form-portion">
+
+<form  class="overall-display" action="/place-order-car" method="post" id="book-car">
+	<label for="" class="order-content-starting-date-label" >STARTING DATE</label>
+	<input type="date" name="startingdate"  class="order-content-starting-date  order-content-form-input" value="" required>
+	<label for="" class="order-content-ending-date-label" >ENDING DATE</label>
+	<input type="date" name="endingdate"  class="order-content-ending-date order-content-form-input" value="" required>
+	<label for="" class="order-content-car-company-label" >CAR COMPANY</label>
+<select class="order-content-car-company order-content-form-input" name="carcompany" required>
+	<option value="carolla">CAROLLA</option>
+		<option value="honda">HONDA</option>
+			<option value="sazuki">SAZUKI</option>
+				<option value="bmw">BMW</option>
+</select>
+	<label for="" class="order-content-car-model-label" >CAR MODEL</label>
+<select class="order-content-car-model order-content-form-input" name="carmodel" required>
+	<option value="2016">2016</option>
+		<option value="2017">2017</option>
+			<option value="2018">2018</option>
+				<option value="2019">2019</option>
+</select>
+				<button  class="btn btn-green order-content-confirm-btn" id="confirm-btn-car" onclick='add_overall_display("confirm-btn-car")'>CONFIRM</button>
+					<a  href="#popup"class="btn btn-green order-content-CANCEL-btn" id="CANCEL-btn-car" onclick='add_overall_display("CANCEL-btn-car")'>CANCEL</a>
+</form>
+
+
+
+<form  class="overall-display" action="/place-order-hotel" method="post" id="book-hotel">
+	<label for="" class="order-content-starting-date-label" >CHECK IN</label>
+	<input type="date" name="checkin"  class="order-content-starting-date  order-content-form-input" value="" required>
+	<label for="" class="order-content-ending-date-label" >CHECK OUT</label>
+	<input type="date" name="checkout"  class="order-content-ending-date order-content-form-input" value="" required>
+	<label for="" class="order-content-car-company-label" >ROOM TYPE</label>
+<select class="order-content-car-company order-content-form-input" name="roomtype" required>
+	<option value="1 bed">1 BED</option>
+		<option value="2bed">2 BED</option>
+			<option value="economy 1bed">economy 1bed</option>
+				<option value="luxury 2bed">luxury 2bed</option>
+</select>
+	<label for="" class="order-content-car-model-label" >TOTAL ROOMS</label>
+<select class="order-content-car-model order-content-form-input" name="totalrooms" required>
+	<option value="1">1</option>
+		<option value="3">2</option>
+			<option value="3">3</option>
+				<option value="more">more</option>
+</select>
+				<button  class="btn btn-green order-content-confirm-btn" id="confirm-btn-hotel" onclick='add_overall_display("confirm-btn-hotel")'>CONFIRM</button>
+					<a  href="#popup" class="btn btn-green order-content-CANCEL-btn" id="CANCEL-btn-hotel" onclick='add_overall_display("CANCEL-btn-hotel")'>CANCEL</a>
+</form>
+
+
+
+<form  id="book-guid">
+	<label for="" class="order-content-starting-date-label" >STARTING DATE</label>
+	<input type="date" name="startingdate"  class="order-content-starting-date  order-content-form-input" value="" required>
+	<label for="" class="order-content-ending-date-label" >ENDING DATE</label>
+	<input type="date" name="endingdate"  class="order-content-ending-date order-content-form-input" value="" required>
+	<label for="" class="order-content-car-company-label" >LANGUAGE</label>
+<select class="order-content-car-company order-content-form-input" name="language" required>
+	<option value="english">ENGLISH</option>
+		<option value="french">FRENCH</option>
+			<option value="spanish">SPANISH</option>
+				<option value="arabic">ERABIC</option>
+</select>
+	<label for="" class="order-content-car-model-label" >NO OF PEOPLE</label>
+<select class="order-content-car-model order-content-form-input" name="no_of_people" required>
+	<option value="less than 5">LESS THAN 5</option>
+		<option value="less than 10">LESS THAN 10</option>
+			<option value="less than 15">LESS THAN 15</option>
+				<option value="less than 20">LESS THAN 20</option>
+</select>
+				<button  class="btn btn-green order-content-confirm-btn" id="confirm-btn-guid" onclick='add_overall_display("confirm-btn-guid")' >CONFIRM</button>
+					<a  href="#popup"class="btn btn-green order-content-CANCEL-btn" id="CANCEL-btn-guid" onclick='add_overall_display("CANCEL-btn-guid")'>CANCEL</a>
+
+</form>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="login_form  " id="login_form">
+
+			<div class="input-background">
+				<div class="input-background-transparent">
+<a href="#header" class="login-popup-close">&times;</a>
+<h7 class="login-head">ENTER YOU EMAIL AND PASSWORD TO LOGIN</h7>
+<form   id="loginform">
+<label for="email" class="login-lable-email">EMAIL</label>
+					<input type="email" name="email" class="  input-place-email" placeholder="Input your email here" required>
+
+<label for="passowrd" class="login-lable-password">PASSWORD</label>
+				<input type="password" name="password" class=" input-place-password" placeholder="Input your password" id="login_mail" required>
+				<label for="RADIO BTN" class="login-lable-accounttype">SELECT THE ACCOUNT TYPE </label>
+		<input type="radio" name="accounttype" value="client" class="login-client" required>
+
+						<label for="client" class="login-lable-CLIENT">CLIENT</label>
+						<input type="radio" name="accounttype" value="seller" class="login-seller" required>
+
+											<label for="client" class="login-lable-seller">SELLER</label>
+
+				<button class="btn btn-white btn-place login-btn-place"  >LOGIN</button>
+		</form>
+					</div>
+		</div>
+
+
+	</div>
+</div>
+
+<div class="signup" id="signup">
+	<div class="signup-selection">
+		<a href="#header" class="signup-selection-popup-close" >&times;</a>
+		<h6 class="signup-selection-heading">WHAT IS YOUR INTREST?</h6>
+		<a href="#signup_form-client" class="btn btn-white  signup-selection-btn-client" onclick="signup_client_change_before_signup()">CLIENT</a>
+		<a href="#signup_form-seller" class="btn btn-white signup-selection-btn-deller"  onclick="signup_seller_change_before_signup()">SELLER</a>
+
+	</div>
+
+</div>
+
+
+<div class="signup_form " id="signup_form-client">
+
+			<div class="signup-input-background"  >
+				<div class="signup-input-background-transparent">
+<a href="#signup-" class="signup-popup-close" >&times;</a>
+<h7 class="signup-head">ENTER THE REQUIRED DATA TO GET REGISTERED</h7>
+
+
+<form  id="signup_form_client">
+	<label for="firstname" class="signup-lable-firstname">FIRST NAME</label>
+						<input type="text" name="firstname" class="input-place-firstname" placeholder="FIRST NAME" required>
+
+						<label for="surname" class="signup-lable-surname">SURNAME</label>
+											<input type="text" name="surname" class="input-place-surname" placeholder="SURNAME" required>
+<label for="email" class="signup-lable-email">EMAIL</label>
+					<input type="email" name="email" class="signup-input-place-email" placeholder="Input your email here" required>
+
+<label for="passowrd" class="signup-lable-password">PASSWORD</label>
+				<input type="password" name="password" class=" signup-input-place-password" placeholder="Input your password" required>
+
+				<label for="dateofbirth" class="signup-lable-dateofbirth">DATE OF BIRTH</label>
+								<input type="date" name="dateofbirth" class=" input-place-dateofbirth" required>
+
+<button class="btn btn-white signup-btn-place"  >SIGNUP</button>
+
+
+
+</form>
+
+					</div>
+		</div>
+
+	</div>
+
+
+	<div class="signup_form  " id="signup_form-seller">
+
+
+			<div class="signup-input-background " >
+				<div class="signup-input-background-transparent">
+	<a href="#signup" class="signup-popup-close" >&times;</a>
+	<h7 class="signup-head">ENTER THE REQUIRED DATA TO GET REGISTERED</h7>
+
+
+	<form  id="signup_form_seller">
+		<label for="firstname" class="signup-lable-firstname">OWNER NAME</label>
+							<input type="text" name="ownername" class="input-place-firstname" placeholder="ownername" required>
+
+							<label for="surname" class="signup-lable-surname">COMPANY NAME</label>
+												<input type="text" name="companyname" class="input-place-surname" placeholder="name of your company" required>
+		<label for="email" class="signup-lable-email">EMAIL</label>
+						<input type="email" name="email" class="signup-input-place-email" placeholder="Input your email here" required>
+
+		<label for="passowrd" class="signup-lable-password">PASSWORD</label>
+					<input type="password" name="password" class=" signup-input-place-password" placeholder="Input your password" required>
+
+					<label for="dateofbirth" class="signup-lable-dateofbirth">STARTING PRICE</label>
+									<input type="text" name="price" class=" input-place-dateofbirth" placeholder="please enter the starting price"required>
+
+
+
+
+											<label for="typeofcompny" class="signup-lable-companytype">PLEASE SELECT ACCOUNT TYPE </label>
+									<input type="radio" name="companytype" value="rent a car" class=" signup-radio-rentacar" >
+									<label class=" signup-radio-lable-rentacar" for="rentacar">RENT A CAR</label>
+									<input type="radio" name="companytype"  value="hotel" class="signup-radio-hotel" >
+									<label class=" signup-radio-lable-hotel" for="hotel">HOTEL</label>
+									<input type="radio" name="companytype"  value="tourist guide" class="signup-radio-guid" >
+									<label class=" signup-radio-lable-guid" for="touristguid">TOURIST GUID</label>
+						<button class="btn btn-white signup-btn-place"  >SIGNUP</button>
+
+
+
+
+					</div>
+						</form>
+		</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header" id="header">
+
+     <div class="header-txt-box">
+     	  <h1 class="heading-primary" id="heading-primary"><span class="heading-primary-main">FACILITY.COM</span>
+     	<span class="heading-primary-sub">OUT DOORS IS WHERE LIFE HAPPENES</span>
+		   <span class="heading-primary-sub overall-display" id="newspan"><span></h1>
+
+    	<a href="#login_form" class="btn btn-white " id="login-btn-1">login</a>
+<a href="#" class="btn btn-white overall-display" id="logout-btn" onclick="logout()" >logout</a>
+     	<a href="#signup" class="btn btn-white " id="signup-btn-1">signup</a>
+
+     </div>
+<a href="#user-profile" class="btn btn-white profile-btn-position overall-display" id="profile-btn" >PROFILE</a>
+
+</header>
+<main>
+	<section class="section-about" id="section-about">
+		<div class="u-center-text center ">
+		<h2 class="heading-secondary u-margin-bottom-big " id="discover-services">SERVICES FOR YOU</h2>
+		</div>
+
+		<div class="row">
+		<div class="col-1-of-2">
+			<h3 class="heading-tertiary  u-margin-bottom-small">WE WILL WORK YOU WILL ENJOY</h3>
+			<p class="paragraph">We will provide you different service that you needed in other countries so that you can enjoy your tour without being panic about things to manage somewhere.you will be served by locals so that your only foacus is to enjoy for what you go outdoor.</p>
+			<h3 class="heading-tertiary u-margin-bottom-small">SERVICES THAT YOU GET HERE</h3>
+			<p class="paragraph">You can book a local tourist guid that can help you with your tour all over the places and you can book a car even before coming so that you did not have transport issus any more and you book your hotel .</p>
+			<a href="#" class="btn-text btn-text-green">LEARN MORE &rarr;</a>
+		</div>
+		<div class="col-1-of-2">
+			<div class="composition">
+				<img src="aboutimg1.jpg" id="about-img1" onclick="alertmsgabout()" alt="photo1"  class="composition-photo  composition-photo-p1">
+				<img src="aboutimg2.jpg" alt="photo2"  class="composition-photo  composition-photo-p2">
+				<img src="aboutimg3.jpg" alt="photo3" class="composition-photo  composition-photo-p3">
+
+			</div>
+
+
+
+		</div>
+     </div>
+
+	</section>
+
+
+
+
+
+
+	<section class="section-tours overall-display" id="booking">
+
+	<div class="u-center-text center " >
+			<h2 class="heading-secondary u-margin-bottom-big" id="section-tours">OUR SERVICES</h2>
+			</div>
+	 <div class="row">
+			<div class="col-1-of-3" >
+
+				<div class="card card-1">
+					<div class=" card-side card-side-front">
+
+	<div class="card-picture card-picture-1"> &nbsp;     </div>
+	<h4 class="card-heading">
+	<span class="card-heading-span card-heading-span-1">BOOOK A GUID</span>    </h4>
+	<div class="card-details">
+
+	<ul>
+		<LI>1 TOUR GUIDE</LI>
+		<LI>1 GUID FOR 10 PEOPLE</LI>
+		<LI>ONLY GIVES YOU DIRECTION</LI>
+		<LI>EXTRA CHARGES FOR EXRTA HELP</LI>
+
+
+	</ul>
+
+
+	  </div>
+
+
+
+					</div>
+
+					<div class=" card-side card-side-back card-side-back-1">
+						<div class="card-cta">
+					<div class="card-price-box">
+						<p class="card-price-only">only</p>
+						<p class="card-price-values">$279</p>
+					</div>
+
+					<a href="#popup" class="btn btn-white"  onclick="setting_company_gig_guid_process()" id="feature-btn-guid">BOOK NOW</a>
+					</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+			<div class="col-1-of-3">
+				<div class="card card-2">
+					<div class=" card-side card-side-front">
+
+	<div class="card-picture card-picture-2"> </div>
+	<h4 class="card-heading">
+	<span class="card-heading-span card-heading-span-2">BOOK A CAR</span>    </h4>
+	<div class="card-details">
+
+	<ul>
+		<LI>1 TOUR CAR</LI>
+		<LI>1 CAR FOR 5 PEOPLE</LI>
+		<LI>CAN ALSO BOOOK BIG ONE</LI>
+		<LI>PRICE VARY ON TYPE</LI>
+
+
+	</ul>
+
+
+	  </div>
+
+
+
+					</div>
+
+					<div class=" card-side card-side-back card-side-back-2">
+						<div class="card-cta">
+					<div class="card-price-box">
+						<p class="card-price-only">only</p>
+						<p class="card-price-values">$279</p>
+					</div>
+
+					<a href="#popup" class="btn btn-white" onclick="setting_company_gig_car_process()" id="feature-btn-car">BOOK NOW</a>
+					</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+			<div class="col-1-of-3">
+
+	<div class="card card-3">
+					<div class=" card-side card-side-front">
+
+	<div class="card-picture card-picture-3"> </div>
+	<h4 class="card-heading">
+	<span class="card-heading-span card-heading-span-3">BOOK A HOTEL</span>    </h4>
+	<div class="card-details">
+
+	<ul>
+		<LI>1 ROOM FOR 2</LI>
+		<LI>1 ROOM FOR 5 PEOPLE</LI>
+		<LI>CAN ALSO BOOOK BIG ONE</LI>
+		<LI>PRICE VARY ON TYPE</LI>
+
+
+	</ul>
+
+
+	  </div>
+
+
+
+					</div>
+
+					<div class=" card-side card-side-back card-side-back-3">
+						<div class="card-cta">
+					<div class="card-price-box">
+						<p class="card-price-only">only</p>
+						<p class="card-price-values">$279</p>
+					</div>
+
+					<a href="#popup" class="btn btn-white" onclick="setting_company_gig_hotel_process()" id="feature-btn-hotel">BOOK NOW</a>
+					</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+			</div>
+	     </div>
+	   </div>
+
+
+	<div class="u-center-text center u-margin-top-big ">
+
+			</div>
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section-features" id="features">
+
+
+
+	<div class="row">
+
+		<div class="col-1-of-3">
+			<div class="feature-box child1">
+				<i class="icon-basic-world feature-box-icon"></i>
+				<h3 class="heading-tertiary u-margin-bottom-small">EXPLORE WORLD</h3>
+				<p class="feature-box-text">We will provide you different service that you needed in other countries so that you can enjoy your tour without being panic about things to manage somewhere..</p>
+
+			</div>
+		</div>
+
+
+		<div class="col-1-of-3">
+			<div class="feature-box child2">
+				<i class="icon-basic-compass feature-box-icon"></i>
+				<h3 class="heading-tertiary u-margin-bottom-small">MEET NATURE</h3>
+				<p class="feature-box-text">We will provide you different service that you needed in other countries so that you can enjoy your tour without being panic about things to manage somewhere..</p>
+
+			</div>
+		</div>
+
+
+
+		<div class="col-1-of-3">
+			<div class="feature-box  child3">
+				<i class="icon-basic-map feature-box-icon"></i>
+				<h3 class="heading-tertiary u-margin-bottom-small">FIND YOUR WAY</h3>
+				<p class="feature-box-text">We will provide you different service that you needed in other countries so that you can enjoy your tour without being panic about things to manage somewhere..</p>
+
+			</div>
+		</div>
+
+
+	</div>
+
+</section>
+
+
+
+
+
+<section class="section-story" id="story">
+
+<div class="bg-video">
+
+<video class="bg-video-content" autoplay loop muted>
+
+<source src="vedio2.mp4" type="video/mp4">
+
+</video>
+
+
+
+</div>
+
+
+
+
+
+	<div class="u-center-text center  u-margin-top-small">
+		<h2 class="heading-secondary u-margin-top-medium u-margin-bottom-medium">WE MAKE PEOPLE GENUINELY HAPPY</h2>
+		</div>
+
+<div class="row">
+
+	<div class="story">
+		<figure class="story-shape">
+
+<img  class="story-img"src="KASH79.jpg">
+<figcaption class="story-caption">SALMAN</figcaption>
+		</figure>
+		<div class="story-text">
+			<h3 class="heading-tertiary u-margin-bottom-small ">i have the best week ever with my family</h3>
+			<p>We will provide you different service that you needed in other countries so that you can enjoy your tour without being panic about things to manage somewhere.you will be served by locals so that your only foacus is to enjoy for what you go outdoor.</p>
+		</div>
+	</div>
+
+
+
+</div>
+
+
+<div class="row">
+
+	<div class="story-2 ">
+		<figure class="story-2-shape">
+
+<img  class="story-2-img"src="KASH64.jpg">
+<figcaption class="story-2-caption">WARRAICH</figcaption>
+		</figure>
+		<div class="story-2-text">
+			<h3 class="heading-tertiary u-margin-bottom-small ">WAW I ENJOYED YOUR SERVICES</h3>
+			<p>We will provide you different service that you needed in other countries so that you can enjoy your tour without being panic about things to manage somewhere.you will be served by locals so that your only foacus is to enjoy for what you go outdoor.</p>
+		</div>
+	</div>
+
+
+
+</div>
+	<div class="u-center-text center u-margin-top-big ">
+		<a href="#" class="btn-text">MORE STORIES &rarr;</a>
+		</div>
+
+
+
+
+
+</section>
+
+<!--
+<section class="section-book">
+
+
+	<div class="book">
+		  <div class="book-form">
+		  	<form class="form">
+		  		<div class="u-center-text center  ">
+		<h2 class="heading-secondary u-margin-bottom-medium  ">START BOOKING NOW</h2>
+		</div>
+
+		  		<div class="form-group">
+		  			<input type="text" name="" class="form-input" placeholder="FULL NAME" required id="name">
+		  			<label for="name" class="form-lable">FULL NAME</label>
+
+		  		</div>
+
+
+<div class="form-group">
+
+		  			<input type="email" name="" class="form-input form-input-1" placeholder="EMAIL" required id="EMAIL">
+		  			<label for="EMAIL" class="form-lable">EMAIL</label>
+
+		  		</div>
+<div class="form-group">
+
+<div class="form-radio-group">
+
+<input type="radio" name="tour-type" class="form-radio-input" id="small">
+<label class="form-radio-lable" for="small">
+<span class="form-radio-button"></span>
+
+SMALL TOUR</label>
+
+</div>
+
+<div class="form-radio-group">
+
+<input type="radio" name="tour-type" class="form-radio-input" id="larg">
+<label class="form-radio-lable" for="larg">
+<span class="form-radio-button"></span>
+LARG TOUR</label>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<button class="btn btn-green">NEXT STEP &rarr;</button>
+
+
+</div>
+
+		  	</form>
+
+
+
+		  </div>
+
+
+	</div>
+
+
+
+
+
+
+
+</section>
+
+-->
+
+
+
+
+
+</main>
+
+
+
+<footer class="footer" >
+
+<div class="footer-logo-box" id="about_facility">
+
+<img src="pictures/logo.png" class="footer-logo">
+
+
+</div>
+
+<div class="row">
+
+<div class="col-1-of-2">
+
+<div class="footer-navigation footer-navigation-row">
+
+<ul class="footer-list">
+	<li class="footer-item"><a href="#" class="
+		footer-link">COMPANY</a></li>
+			<li class="footer-item"><a href="#" class="
+		footer-link">COONTACT US</a></li>
+			<li class="footer-item"><a href="#" class="
+		footer-link">CREAR</a></li>
+			<li class="footer-item"><a href="#" class="
+		footer-link">PRIVACY</a></li>
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="col-1-of-2">
+
+<p class="footer-copyright  footer-copyright-row">
+
+BUILT MY<a href="" class="footer-link"></a>.copyright &copy; by SULEEMAN SHOUKAT your are allowed to use this website but not allow to tell it is you own design
+
+</p>
+
+
+</div>
+
+</div>
+
+</footer>
+<!--
+<div class="popup-cnfirm-background" id="popup-cnfrm">
+
+
+<div class="popup-cnfrm" >
+	<div class="confirmation">
+
+		<h5 class="confirmation-message">Press ok to confirm the booking you will receive a confirmation email after you press ok or cancel the booking by pressing cancel</h5>
+		<a href="#section-tours" class="btn btn-green  confirmation-btn-setting-ok" id="">OK</a>
+			<a href="#popup" class="btn btn-green  confirmation-btn-setting-cancel" id="">CANCEL</a>
+
+	</div>
+</div>
+</div>
+-->
+
+<div class="popup" id="popup">
+
+	<div class="popup-content">
+	<a href="#section-tours" class="popup-close" onclick="remove_gig()">&times;</a>
+	<h2 class="heading-secondary popup-content-h2">START BOOKING NOW</h2>
+<h5 class="heading-tertiary popup-content-h5">AVAILABLE SELLERS</h5>
+
+<div class="seller-setting" id="seller-setting">
+
+</div>
+
+
+<!--<button href="" class="btn btn-green btn-setting" id="">book</button>-->
+		</div>
+
+	</div>
+
+
+
+	</div>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="./frontscript.js">
+
+</script>
+
+
+
+
+</body>
+</html>
